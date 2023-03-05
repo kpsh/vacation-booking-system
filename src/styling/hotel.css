@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/*
+ * -----------------------------------------------------//
+ */
+.primaryPane {
+    -fx-background-image: url('../images/hotel/bg.jpg');
+    -fx-background-size: 100%;
+}
+
+
+.scroll-pane {
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+}
+.scroll-bar:vertical{
+    -fx-background-color: #0088b1;
+    -fx-background-insets: 0, 0, 0, 0;
+}
+.increment-button, .decrement-button {
+    -fx-background-color :transparent;
+}
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow{
+    -fx-shape : " ";
+}
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #263a44;
+    -fx-background-radius: 5px;
+}
+.secondaryPane {
+    -fx-background-color: #0088b1;
+}
+.lbl-btn {
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-text-fill: #263a44;
+}
+.lbl-btn:hover {
+    -fx-underline: true;
+}
+.lbl-btn:pressed {
+    -fx-background-color: #516169;
+}
+.label {
+    -fx-text-fill: #263a44;
+}
+.button {
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-background-color: #263a44;
+    -fx-text-fill: #f1f1f1;
+}
+.button:pressed {
+    -fx-background-color: #1a282f;
+}
+
+.htext {
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.text-field {
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-border-color: #263a44;
+    -fx-border-width: 0.5px;
+    -fx-border-radius: 3px;
+    -fx-background-color: #f1f1f1;
+}
+
+.text-field:focused {
+    -fx-border-color: #1a282f;
+    -fx-border-width: 1px;
+}
+.text-field:readonly {
+    -fx-background-color: #c1c1c1;
+}
+
+.btn {
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-background-color: #f1f1f1;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100%;
+    -fx-text-fill: #006464;
+    -fx-font-weight: bold;
+    -fx-padding: 190px 0 0 0;
+    -fx-border-color: #006464;
+    -fx-border-width: 1px;
+    -fx-border-radius: 3px;
+    -fx-background-insets:0;
+}
+.btn:hover {
+    -fx-effect: dropshadow(three-pass-box, #006464, 5, 0, 0, 0);
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}
+.btn:pressed {
+    -fx-effect: dropshadow(three-pass-box, #033D47, 15, 0, 0, 0);
+    -fx-text-fill: #f1f1f1;
+}
+.btn-1 {
+    -fx-background-image: url('../images/hotel/bg1.jpg');
+}
+.btn-1:hover {
+    -fx-background-image: url('../images/hotel/bg1-1.jpg');
+}
+.btn-2 {
+    -fx-background-image: url('../images/hotel/bg2.jpg');
+}
+.btn-2:hover {
+    -fx-background-image: url('../images/hotel/bg2-2.jpg');
+}
+.btn-3 {
+    -fx-background-image: url('../images/hotel/bg3.jpg');
+}
+.btn-3:hover {
+    -fx-background-image: url('../images/hotel/bg3-3.jpg');
+}
+.btn-4 {
+    -fx-background-image: url('../images/hotel/bg4.jpg');
+}
+.btn-4:hover {
+    -fx-background-image: url('../images/hotel/bg4-4.jpg');
+}
+.btn-5 {
+    -fx-background-image: url('../images/hotel/bg5.jpg');
+}
+.btn-5:hover {
+    -fx-background-image: url('../images/hotel/bg5-5.jpg');
+}
+.btn-6 {
+    -fx-background-image: url('../images/hotel/bg6.jpg');
+}
+.btn-6:hover {
+    -fx-background-image: url('../images/hotel/bg6-6.jpg');
+}
+.btn-7 {
+    -fx-background-image: url('../images/hotel/bg1.jpg');
+}
+.btn-7:hover {
+    -fx-background-image: url('../images/hotel/bg1.jpg');
+}

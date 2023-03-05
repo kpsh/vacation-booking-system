@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" maxHeight="599.0" maxWidth="998.0" minHeight="599.0" minWidth="998.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminController">
+    <stylesheets>
+        <URL value="@/styling/style.css" />
+    </stylesheets>
+   <children>
+      <Pane maxHeight="599.0" maxWidth="998.0" minHeight="599.0" minWidth="998.0" styleClass="secondaryPane" stylesheets="@../styling/purchase.css">
+         <children>
+            <Label alignment="CENTER" layoutX="324.0" layoutY="50.0" prefWidth="350.0" styleClass="htext" text="ADD FLIGHTS" textAlignment="CENTER" />
+            <Pane fx:id="hide" layoutX="27.0" layoutY="300.0" prefHeight="149.0" prefWidth="818.0" visible="false">
+               <children>
+                  <Label layoutX="212.0" text="Flight ID" />
+                  <TextField fx:id="ffrom" layoutX="376.0" layoutY="21.0" prefHeight="25.0" prefWidth="200.0" promptText="(YYY) Aaaa, Bbbb" />
+                  <Label layoutX="376.0" text="From" />
+                  <Button layoutX="687.0" layoutY="95.0" mnemonicParsing="false" onMouseClicked="#bookBtn" prefHeight="50.0" prefWidth="100.0" text="SAVE" />
+                  <Button layoutX="569.0" layoutY="115.0" mnemonicParsing="false" onMouseClicked="#clearBtn" prefHeight="30.0" prefWidth="100.0" text="Clear" />
+                  <TextField fx:id="fid" layoutX="210.0" layoutY="21.0" prefHeight="27.0" prefWidth="157.0" promptText="XX00000" />
+                  <Label layoutY="69.0" style="-fx-font-size: 16;" text="Add a Flight:" />
+                  <Label layoutX="212.0" layoutY="99.0" text="Date / Time" />
+                  <TextField fx:id="fto" layoutX="587.0" layoutY="21.0" prefHeight="25.0" prefWidth="200.0" promptText="(ZZZ) Aaaa, Bbbb" />
+                  <Label layoutX="587.0" text="To" />
+                  <TextField fx:id="fdate" layoutX="210.0" layoutY="120.0" prefHeight="27.0" prefWidth="132.0" promptText="dd/mm/yyyy   00:00" />
+                  <Label layoutX="442.0" layoutY="99.0" text="Seats" />
+                  <TextField fx:id="fseats" layoutX="442.0" layoutY="120.0" prefHeight="25.0" prefWidth="101.0" promptText="000" />
+                  <Label layoutX="352.0" layoutY="100.0" text="Class" />
+                  <TextField fx:id="fclass" layoutX="351.0" layoutY="120.0" prefHeight="27.0" prefWidth="82.0" promptText="E, B, F" />
+               </children>
+            </Pane>
+            <Button layoutX="897.0" layoutY="549.0" mnemonicParsing="false" onMouseClicked="#closeW" prefHeight="50.0" prefWidth="101.0" text="Exit" />
+            <Label layoutX="32.0" layoutY="148.0" text="Enter Admin Code " />
+            <Button layoutX="199.0" layoutY="166.0" mnemonicParsing="false" onMouseClicked="#checkBtn" prefHeight="30.0" prefWidth="100.0" text="Check!" />
+            <PasswordField fx:id="fcode" layoutX="29.0" layoutY="169.0" prefHeight="27.0" prefWidth="157.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

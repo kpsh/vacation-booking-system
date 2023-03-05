@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="599.0" maxWidth="998.0" minHeight="599.0" minWidth="998.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FlightController">
+    <stylesheets>
+        <URL value="@/styling/flight.css" />
+    </stylesheets>
+    <children>
+        <Pane layoutX="648.0" maxHeight="600.0" maxWidth="350.0" minHeight="600.0" minWidth="350.0" styleClass="secondaryPane" stylesheets="@../styling/purchase.css">
+            <children>
+                <Label onMouseClicked="#closeW" prefHeight="44.0" prefWidth="135.0" styleClass="lbl-btn" text="RETURN BACK">
+                    <graphic>
+                        <FontAwesomeIconView fill="#263a44" glyphName="HOME" size="18.0" />
+                    </graphic>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </Label>
+                <Label alignment="CENTER" layoutY="65.0" prefWidth="350.0" styleClass="htext" text="FLIGHT DETAILS" textAlignment="CENTER" />
+                <TextField fx:id="flightField" editable="false" layoutX="20.0" layoutY="187.0" prefHeight="25.0" prefWidth="200.0" styleClass="tfield" />
+                <Label layoutX="20.0" layoutY="167.0" text="Flight ID" />
+                <TextField fx:id="seatsField" editable="false" layoutX="230.0" layoutY="187.0" prefHeight="25.0" prefWidth="100.0" />
+                <Label layoutX="230.0" layoutY="167.0" text="Seats Left" />
+                <Label layoutX="21.0" layoutY="231.0" text="Country" />
+                <TextField fx:id="name" layoutX="130.0" layoutY="252.0" prefHeight="25.0" prefWidth="200.0" />
+                <Label layoutX="130.0" layoutY="231.0" text="Full Name" />
+                <TextField fx:id="number" layoutX="179.0" layoutY="317.0" prefHeight="25.0" prefWidth="150.0" />
+                <Label layoutX="180.0" layoutY="297.0" text="Phone Number" />
+                <TextField fx:id="email" layoutX="19.0" layoutY="317.0" prefHeight="25.0" prefWidth="150.0" />
+                <Label layoutX="20.0" layoutY="297.0" text="Email" />
+                <Button layoutX="222.0" layoutY="514.0" mnemonicParsing="false" onMouseClicked="#bookBtn" prefHeight="50.0" prefWidth="100.0" text="Book!" />
+                <Button layoutX="222.0" layoutY="464.0" mnemonicParsing="false" onMouseClicked="#clearBtn" prefHeight="30.0" prefWidth="100.0" text="Clear" />
+                <Label layoutX="32.0" layoutY="467.0" style="-fx-font-weight: bold; -fx-font-size: 16px;" text="FULL PRICE" />
+                <Label fx:id="priceLbl" layoutX="32.0" layoutY="527.0" style="-fx-font-weight: bold; -fx-font-size: 16px;" text="0000000" />
+            <ComboBox fx:id="luggages" layoutX="19.0" layoutY="364.0" prefHeight="25.0" prefWidth="100.0" promptText="Luggages" />
+            <ComboBox fx:id="seats" layoutX="129.0" layoutY="364.0" prefHeight="25.0" prefWidth="90.0" promptText="Seats" />
+            <ComboBox fx:id="extras" layoutX="229.0" layoutY="364.0" prefHeight="25.0" prefWidth="100.0" promptText="Extras" />
+            <TextField fx:id="country" layoutX="19.0" layoutY="252.0" prefHeight="25.0" prefWidth="101.0" />
+            </children>
+        </Pane>
+        <TableView fx:id="flights" maxHeight="600.0" maxWidth="648.0" minHeight="600.0" minWidth="648.0" stylesheets="@../styling/table.css">
+            <columns>
+                <TableColumn fx:id="fid" editable="false" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" resizable="false" sortable="false" style="-fx-alignment: center;" text="Flight ID" />
+                <TableColumn fx:id="ffrom" editable="false" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" resizable="false" sortable="false" style="-fx-alignment: center;" text="From" />
+                <TableColumn fx:id="fto" editable="false" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" resizable="false" sortable="false" style="-fx-alignment: center;" text="To" />
+                <TableColumn fx:id="fdate" editable="false" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" resizable="false" sortable="false" style="-fx-alignment: center;" text="Date/Time" />
+                <TableColumn fx:id="fclass" editable="false" maxWidth="78.0" minWidth="78.0" prefWidth="78.0" sortable="false" style="-fx-alignment: center;" text="Class" />
+                <TableColumn fx:id="fseats" editable="false" maxWidth="67.0" minWidth="67.0" prefWidth="67.0" sortable="false" style="-fx-alignment: center;" text="Seats Left" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

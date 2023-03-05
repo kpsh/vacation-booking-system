@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="650.0" maxWidth="1000.0" minHeight="650.0" minWidth="1000.0" styleClass="window-border" stylesheets="@../styling/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+   <children>
+      <Pane id="ToolPane" layoutX="1.0" layoutY="1.0" maxHeight="49.0" maxWidth="998.0" minHeight="49.0" minWidth="998.0">
+         <children>
+            <Button fx:id="closeW" layoutX="954.0" maxHeight="49.0" mnemonicParsing="false" onMouseClicked="#closeW" prefHeight="49.0" styleClass="clearBtn">
+               <graphic>
+                  <FontAwesomeIconView fill="#f0f0f0" glyphName="CLOSE" glyphStyle=" " size="30" />
+               </graphic>
+            </Button>
+            <Button fx:id="outW" maxHeight="49.0" mnemonicParsing="false" onMouseClicked="#outBtn" prefHeight="49.0" styleClass="clearBtn" text="LOGOUT" />
+         </children>
+      </Pane>
+      <Pane fx:id="background" layoutX="1.0" layoutY="49.0" maxHeight="600.0" maxWidth="998.0" minHeight="600.0" minWidth="998.0" styleClass="mainPane">
+         <children>
+            <TilePane hgap="40.0" layoutX="200.0" layoutY="190.0" maxHeight="331.0" maxWidth="600.0" minHeight="331.0" minWidth="600.0" prefColumns="2" prefRows="2" prefTileHeight="145.0" prefTileWidth="275.0" vgap="40.0">
+               <children>
+                  <Button maxHeight="145.0" maxWidth="275.0" minHeight="145.0" minWidth="275.0" mnemonicParsing="false" onMouseClicked="#mapAction" styleClass="mainBtn" text="MAP">
+                     <graphic>
+                        <FontAwesomeIconView fill="#f0f0f0" glyphName="MAP_MARKER" size="40" />
+                     </graphic></Button>
+                  <Button maxHeight="145.0" maxWidth="275.0" minHeight="145.0" minWidth="275.0" mnemonicParsing="false" onMouseClicked="#flightsAction" styleClass="mainBtn" text="FLIGHTS">
+                     <graphic>
+                        <FontAwesomeIconView fill="#f1f1f1" glyphName="PLANE" size="40" />
+                     </graphic></Button>
+                  <Button maxHeight="145.0" maxWidth="275.0" minHeight="145.0" minWidth="275.0" mnemonicParsing="false" onMouseClicked="#hotelsAction" styleClass="mainBtn" text="HOTELS">
+                     <graphic>
+                        <FontAwesomeIconView fill="#f1f1f1" glyphName="BED" size="40" />
+                     </graphic></Button>
+                  <Button maxHeight="145.0" maxWidth="275.0" minHeight="145.0" minWidth="275.0" mnemonicParsing="false" onMouseClicked="#carsAction" styleClass="mainBtn" text="RENT CAR">
+                     <graphic>
+                        <FontAwesomeIconView fill="#f1f1f1" glyphName="CAR" size="40" />
+                     </graphic></Button>
+               </children>
+            </TilePane>
+            <Label alignment="CENTER" layoutY="30.0" prefHeight="35.0" prefWidth="1000.0" style="-fx-font-weight: bold; -fx-font-size: 30px;" text="WELCOME! In need for some vacations? " textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="392.0" layoutY="112.0" prefHeight="35.0" prefWidth="215.0" style="-fx-font-size: 12px; -fx-background-color: rgba(3, 61, 71, 0.5); -fx-font-weight: bold;" text="Click below for more information" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="918.0" layoutY="543.0" onMouseClicked="#goAdmin" style="-fx-underline: true;" text="edit?" textFill="#727272">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <graphic>
+                  <FontAwesomeIconView fill="#727272" glyphName="EDIT" />
+               </graphic>
+            </Label>
+         </children></Pane>
+   </children>
+</AnchorPane>

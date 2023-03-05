@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.TilePane?>
+
+<AnchorPane maxHeight="599.0" maxWidth="998.0" minHeight="599.0" minWidth="998.0" stylesheets="@../styling/hotel.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HotelController">
+   <children>
+      <ScrollPane fitToWidth="true" maxHeight="600.0" maxWidth="650.0" minHeight="600.0" minWidth="650.0">
+         <content>
+            <TilePane hgap="20.0" maxWidth="637.0" minWidth="637.0" prefColumns="2" prefRows="0" prefTileHeight="230.0" prefTileWidth="286.0" styleClass="primaryPane" vgap="20.0">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <children>
+                  <Button maxHeight="230.0" maxWidth="286.0" minHeight="230.0" minWidth="286.0" mnemonicParsing="false" onMouseClicked="#btn1" text="★★★★★ | Premium Beach Hotel | Durres">
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btn-1" />
+                     </styleClass>
+                  </Button>
+                  <Button maxHeight="230.0" maxWidth="286.0" minHeight="230.0" minWidth="286.0" mnemonicParsing="false" onMouseClicked="#btn2" text="★★★★★ | Regina Blu Hotel | Vlore">
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btn-2" />
+                     </styleClass>
+                  </Button>
+                  <Button maxHeight="230.0" maxWidth="286.0" minHeight="230.0" minWidth="286.0" mnemonicParsing="false" onMouseClicked="#btn3" text="★★★★★ | Splendid Spa Resort | Budva">
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btn-3" />
+                     </styleClass>
+                  </Button>
+                  <Button maxHeight="230.0" maxWidth="286.0" minHeight="230.0" minWidth="286.0" mnemonicParsing="false" onMouseClicked="#btn4" text="★★★★ | Hotel Budva | Budva">
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btn-4" />
+                     </styleClass>
+                  </Button>
+                  <Button maxHeight="230.0" maxWidth="286.0" minHeight="230.0" minWidth="286.0" mnemonicParsing="false" onMouseClicked="#btn5" text="★★★★★ | Hotel Lone | Rovinj">
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btn-5" />
+                     </styleClass>
+                  </Button>
+                  <Button maxHeight="230.0" maxWidth="286.0" minHeight="230.0" minWidth="286.0" mnemonicParsing="false" onMouseClicked="#btn6" text="★★★★ |  Hotel Bellevue | Mali Lošinj">
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btn-6" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </TilePane>
+         </content>
+      </ScrollPane>
+      <Pane layoutX="650.0" prefHeight="600.0" prefWidth="350.0" styleClass="secondaryPane">
+         <children>
+            <Label fx:id="closeBtn" onMouseClicked="#closeW" prefHeight="44.0" prefWidth="135.0" styleClass="lbl-btn" text="RETURN BACK">
+               <graphic>
+                  <FontAwesomeIconView fill="#006363" glyphName="HOME" size="18.0" />
+               </graphic>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Label>
+            <Label alignment="CENTER" layoutY="44.0" prefWidth="350.0" styleClass="htext" text="HOTEL DETAILS" textAlignment="CENTER" />
+            <TextField fx:id="hotel" editable="false" layoutX="20.0" layoutY="148.0" prefHeight="25.0" prefWidth="180.0" styleClass="tfield" />
+            <Label layoutX="20.0" layoutY="128.0" text="Hotel" />
+            <TextField fx:id="clientid" layoutX="20.0" layoutY="213.0" prefHeight="25.0" prefWidth="150.0" />
+            <Label layoutX="20.0" layoutY="192.0" text="Client ID" />
+            <TextField fx:id="name" layoutX="180.0" layoutY="213.0" prefHeight="25.0" prefWidth="150.0" />
+            <Label layoutX="180.0" layoutY="193.0" text="Full Name" />
+            <TextField fx:id="number" layoutX="180.0" layoutY="277.0" prefHeight="25.0" prefWidth="150.0" />
+            <Label layoutX="180.0" layoutY="257.0" text="Phone Number" />
+            <TextField fx:id="email" layoutX="20.0" layoutY="277.0" prefHeight="25.0" prefWidth="150.0" />
+            <Label layoutX="20.0" layoutY="257.0" text="Email" />
+            <Button layoutX="220.0" layoutY="519.0" mnemonicParsing="false" onMouseClicked="#rentBtn" prefHeight="50.0" prefWidth="100.0" text="Reserve!" />
+            <Button layoutX="220.0" layoutY="469.0" mnemonicParsing="false" onMouseClicked="#clearBtn" prefHeight="30.0" prefWidth="100.0" text="Clear" />
+            <Label layoutX="33.0" layoutY="472.0" style="-fx-font-weight: bold; -fx-font-size: 16px;" text="FULL PRICE" />
+            <Label fx:id="price" layoutX="33.0" layoutY="532.0" style="-fx-font-weight: bold; -fx-font-size: 16px;" text="0000000" />
+            <DatePicker fx:id="checkinDate" layoutX="20.0" layoutY="329.0" prefHeight="27.0" prefWidth="150.0" promptText="Check In Date" />
+            <DatePicker fx:id="checkoutDate" layoutX="180.0" layoutY="329.0" prefHeight="27.0" prefWidth="150.0" promptText="Check Out Date" />
+            <ComboBox fx:id="room" layoutX="20.0" layoutY="380.0" prefWidth="150.0" promptText="Room Type" />
+            <ComboBox fx:id="extras" layoutX="181.0" layoutY="380.0" prefWidth="150.0" promptText="Extras" />
+            <TextField fx:id="city" editable="false" layoutX="210.0" layoutY="148.0" prefHeight="25.0" prefWidth="119.0" styleClass="tfield" />
+            <Label layoutX="210.0" layoutY="128.0" text="City" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

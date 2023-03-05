@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+
+.window-border {
+    -fx-border-color: #57a376;
+    -fx-border-width: 1px;
+}
+.cBtn {
+    -fx-font-family: 'Quicksand', sans-serif;
+    -fx-background-color: transparent;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+.login-left {
+    -fx-background-image: url('../images/login.gif');  
+}
+.login-right {
+    -fx-background-color: #47abcb;  
+}
+.welcome {
+    -fx-font-family: 'Viga', sans-serif;
+    -fx-font-size: 36px;
+    -fx-fill: #0088b1;
+    -fx-stroke: #263a44;
+    -fx-stroke-width: 2px;
+}
+.login-field {
+    -fx-background-color: #f1f1f1;
+    -fx-background-radius: 0;
+    -fx-prompt-text-fill: #334455;
+    -fx-text-fill: #334455;
+    -fx-font-weight: bold;
+}
+.login-field:focused {
+    -fx-background-radius: 5px;
+
+}
+.login-btn{
+    -fx-background-color: #263a44;
+    -fx-text-fill: #f1f1f1;
+    -fx-background-radius: 0;
+    -fx-font-weight: bold;
+}
+.login-btn:hover {
+    -fx-background-radius: 5px;
+    -fx-background-color: #1a282f;
+}
+.login-btn:pressed {
+    -fx-background-color: #0f171b;
+}
+
+
+.register-right {
+    -fx-background-image: url('../images/login.gif');  
+}
+.register-left {
+    -fx-background-color: #263a44;  
+}
+.register {
+    -fx-font-family: 'Viga', sans-serif;
+    -fx-font-size: 32px;
+    -fx-fill: #263a44;
+    -fx-stroke: #f1f1f1;
+    -fx-stroke-width: 2px;
+}
+.register-field {
+    -fx-background-color: #66737d;
+    -fx-background-radius: 0;
+    -fx-prompt-text-fill: #f1f1f1;
+    -fx-text-fill: #f1f1f1;
+    -fx-font-weight: bold;
+}
+.register-field:focused {
+    -fx-prompt-text-fill: #f1f1f1;
+    -fx-background-radius: 5px;
+
+}
+.register-btn{
+    -fx-background-color: #f1f1f1;
+    -fx-text-fill: #263a44;
+    -fx-background-radius: 0;
+    -fx-font-weight: bold;
+}
+.register-btn:hover {
+    -fx-background-radius: 5px;
+    -fx-background-color: #c0c0c0;
+}
+.register-btn:pressed {
+    -fx-background-color: #909090;
+}
+.scroll-bar:vertical{
+    -fx-background-color: #0088b1;
+    -fx-background-insets: 0, 0, 0, 0;
+}
+.increment-button, .decrement-button {
+    -fx-background-color :transparent;
+}
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow{
+    -fx-shape : " ";
+}
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #263a44;
+    -fx-background-radius: 5px;
+}
+#ToolPane {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #033d47, #02282f);
+}
+
+.clearBtn {
+    -fx-font-family: 'Quicksand', sans-serif;
+    -fx-background-color: transparent;
+    -fx-text-fill: #f1f1f1;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+.clearBtn:hover {
+    -fx-background-color: #1e2e36;   
+}
+.clearBtn:pressed {
+    -fx-background-color: #162228;
+}
+
+.mainPane {
+    -fx-background-image: url('../images/main.jpg');  
+    -fx-background-size: 100%;
+}
+
+.mainBtn {
+    -fx-background-color: #001527;
+    -fx-opacity: 0.8;
+    -fx-font-size: 32px;
+    -fx-text-fill: #f1f1f1;
+}
+.mainBtn:hover {
+    -fx-opacity: 1;
+    -fx-background-radius: 20px;
+    -fx-transition-delay: 1s;
+}
+.mainBtn:pressed {
+    -fx-opacity: 1;
+    -fx-background-color: #000f1b;
+}
+
+.map-pin {
+    -fx-background-color: transparent;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+}
+.map-pin:hover {
+    -fx-border-color: #033d47;
+    -fx-border-width: 2px;
+    -fx-border-style: dashed;
+}
+.map-pin:pressed {
+    -fx-border-width: 3px;
+    -fx-border-style: solid;
+    -fx-background-color: rgba(3, 61, 71, 0.5);
+}
+
+.map-text {
+    -fx-text-fill: #033d47;
+    -fx-background-color: rgba(3, 61, 71, 0.5);
+    -fx-prompt-text-fill: rgba(3, 61, 71, 0.6);
+    -fx-control-inner-background: rgba(3, 61, 71, 0.5);
+}
+.map-text:focused {
+    -fx-control-inner-background: rgba(3, 61, 71, 0.2);
+}
+.map-img1 {
+    -fx-background-image: url('../images/map/london.jpg');  
+    -fx-background-size: 100%;
+}
+.map-img2 {
+    -fx-background-image: url('../images/map/helsinki.jpg');  
+    -fx-background-size: 100%;
+}
+.map-img3 {
+    -fx-background-image: url('../images/map/paris.jpg');  
+    -fx-background-size: 100%;
+}
+.map-img4 {
+    -fx-background-image: url('../images/map/berlin.jpg');  
+    -fx-background-size: 100%;
+}
+.map-img5 {
+    -fx-background-image: url('../images/map/budapest.jpg');    
+    -fx-background-size: 100%;
+}
+.map-img6 {
+    -fx-background-image: url('../images/map/reykjavik.jpg');  
+    -fx-background-size: 100%;
+}
+.map-img7 {
+    -fx-background-image: url('../images/map/rome.jpg');
+    -fx-background-size: 100%;
+}
+.map-img8 {
+    -fx-background-image: url('../images/map/lisbon.jpg');  
+    -fx-background-size: 100%;
+}
+.map-img9 {
+    -fx-background-image: url('../images/map/barcelona.jpg');  
+    -fx-background-size: 100%;
+}
+.map-img10 {
+    -fx-background-image: url('../images/map/istanbul.jpg');  
+    -fx-background-size: 100%;
+}
+
+
