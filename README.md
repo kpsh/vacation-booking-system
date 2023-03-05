@@ -8,7 +8,8 @@ Java project for Computer Applications course in my university
 - MySQL
 - CSS
 
-##
+> Some images were taken from google search, unsplash, and some are from me. Their purpose is to showcase the application, personal use only.
+
 ## MainMenu, Map Views
 ![Imgur Image](https://i.imgur.com/n0BaW5E.png)
 ![Imgur Image](https://i.imgur.com/ErzEV3n.png)
